@@ -30,8 +30,13 @@ public class HomeController {
 	public String acessoNegado(HttpServletRequest request){
 		return "403";
 	}
-	
-	 // Error page
+
+	@RequestMapping(value ={ "/sobre"})
+	public String aboutSape(HttpServletRequest request){
+		return "sobre";
+	}
+
+	// Error page
 //	  @RequestMapping("/error.html")
 //	  public String error(HttpServletRequest request, Model model) {
 //	    model.addAttribute("errorCode", request.getAttribute("javax.servlet.error.status_code"));
